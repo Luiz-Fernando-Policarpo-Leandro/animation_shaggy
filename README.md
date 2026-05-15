@@ -43,7 +43,7 @@ trabalho_animacao/
 1. Clonar ou baixar o projeto:
 
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/Luiz-Fernando-Policarpo-Leandro/animacao_shaggy.git
    cd trabalho_animacao
    ```
 
