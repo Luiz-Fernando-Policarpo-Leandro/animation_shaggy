@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: #a5a5a5;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  gap: 10px;
+
+  z-index: 1000;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  gap: 10px;
+
+  z-index: 100;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  border: none;
+
+  background-image: url("../images/scooby-snack.png");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  cursor: pointer;
+
+  color: #3b1f0f;
+
+  font-size: 1rem;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+  /* evita seleção */
+  user-select: none;
+
+  /* melhora legibilidade */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+
+  transition:
+    transform 0.15s ease,
+    filter 0.15s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+button:hover {
+  transform: translateY(-2px) scale(1.04);
+
+  filter: brightness(1.08);
+}
+
+/* =========================
+   CLICK
+========================= */
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* =========================
+   TEXTO EASTEREGG
+========================= */
+
+#easteregg {
+  position: absolute;
+
+  display: none;
+
+  top: 30%;
+  left: 60%;
+
+  max-width: 200px;
+  text-align: center;
+  word-wrap: break-word;
+
+  transform: translate(-50%, -50%);
+
+  color: #ff3b3b;
+
+  font-size: 2rem;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-weight: 700;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+  z-index: 999;
+
+  user-select: none;
+}
